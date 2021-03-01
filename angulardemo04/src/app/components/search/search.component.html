@@ -1,0 +1,19 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-29 12:27:16
+ * @LastEditTime: 2020-11-29 13:18:09
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \angulardemo04\src\app\components\search\search.component.html
+-->
+<div class="search">
+<input type="text" [(ngModel)]="keyword" /> <button (click)="doSearch()">搜索</button>
+
+<hr>
+
+<ul>
+
+    <li *ngFor="let item of historyList;let key=index;">{{item}}  -------<button (click)="deleteHistory(key)">x</button></li>
+</ul>
+
+</div>

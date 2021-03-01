@@ -1,0 +1,112 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-15 13:54:54
+ * @LastEditTime: 2020-11-15 16:07:27
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \angulardemo03\src\app\compents\news\news.component.html
+-->
+        <h1>angular模板里边绑定数据</h1>
+        <h2>{{title}}</h2>
+        <h3>{{msg}}</h3>
+        <h4>{{username}}</h4>
+        <hr />
+        <h6>{{ userinfo.username}}</h6>
+
+        <div>
+
+            {{massage}}
+        </div>
+
+<hr />
+        <h1>angular里边绑定属性 </h1>
+        <!-- 静态 -->
+        <div title="我是一个div">
+
+            鼠标瞄上去看一下
+        </div>
+
+        <!-- 动态 -->
+        <div [title]="student">
+        
+            张三
+        </div>
+
+<hr />
+        <h1>angular里边绑定html</h1>
+
+        <div>
+
+            {{content}}
+        </div>
+
+
+        <br />
+        <!-- 解析HTML代码 -->
+        <span [innerHTML]='content' class="red"></span>
+<br />
+<br />
+<br />
+<br />
+
+<h1>angular模板里边允许做简单的运算</h1>
+
+1+2={{1+2}}
+
+<hr />
+
+
+
+
+<h1>angular里边的数据循环</h1>
+
+<ol>
+<li *ngFor="let item of arr">
+
+        {{item}}
+</li>
+
+</ol>
+
+<br />
+
+<ol>
+    
+    <li *ngFor="let item of list">
+
+
+        {{item}}
+    </li>
+
+</ol>
+
+<br />
+
+
+<ul>
+    
+    <li *ngFor="let item of userlist">
+
+        {{item.username}}-----{{item.age}}
+    </li>
+
+</ul>
+
+<br />
+
+<ul>
+    
+    <li *ngFor="let item of cars">
+
+        <h2>{{item.cate}}</h2>
+
+        <ol>
+
+            <li *ngFor="let car of item.list">
+
+                {{car.title}}-----{{car.price}}
+            </li>
+        </ol>
+    </li>
+
+</ul>

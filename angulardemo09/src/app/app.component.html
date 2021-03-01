@@ -1,0 +1,17 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-02-24 10:54:26
+ * @LastEditTime: 2021-02-24 20:06:57
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \angulardemo09\src\app\app.component.html
+-->
+<div class="header">
+  
+  <a [routerLink]="['/home']" routerLinkActive="active">首页</a>
+
+  <a [routerLink]="['/product']" routerLinkActive="active">商品</a>
+
+  <a [routerLink]="['/news']" routerLinkActive="active">新闻</a>
+</div>
+<router-outlet></router-outlet>

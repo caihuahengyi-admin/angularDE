@@ -1,0 +1,12 @@
+#aside{
+    width: 200px;
+    height: 100%;
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    background: #000;
+    color: #fff;
+    transform: translate(100%,0);//x轴，y轴
+
+    transition: all 2s;//过渡使其运动
+}

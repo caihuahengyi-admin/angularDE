@@ -1,0 +1,26 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-02-24 10:57:39
+ * @LastEditTime: 2021-02-24 19:37:57
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \angulardemo09\src\app\components\product\product.component.html
+-->
+<div class="content">
+
+    <div class="left">
+
+        <a [routerLink]="[ '/product/pcate']" routerLinkActive="active">商品分类</a>
+        <br>
+
+        <br>
+        <a [routerLink]="[ '/product/plist']" routerLinkActive="active">商品列表</a>
+    </div>
+
+    <div class="right">
+
+        <router-outlet></router-outlet>
+        
+
+    </div>
+</div>

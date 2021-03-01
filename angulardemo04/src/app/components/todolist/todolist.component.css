@@ -1,0 +1,29 @@
+h2{
+
+    text-align: center;
+}
+
+.todolist{
+
+    width: 400px;
+    margin: 20px auto;
+    
+}
+.form_input{
+
+    margin-bottom: 20px;
+    width: 300px;
+    height: 32px;
+}
+
+button{
+    height: 30px;
+    width: 30px;
+    
+}
+
+li{
+
+    line-height: 50px;
+
+}
